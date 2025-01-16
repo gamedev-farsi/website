@@ -1,0 +1,37 @@
+baseURL = '/'
+title = 'گِیم دِو فارسی - GameDevFarsi'
+
+theme = "gdfa"
+languageCode = 'fa'
+buildDrafts = false
+defaultContentLanguage = 'fa'
+
+[Languages]
+[Languages.fa]
+languageCode = "fa"
+languageDirection = "rtl"
+[languages.fa.pagination]
+disableAliases = false
+
+[[menus.main]]
+name = 'صفحه اصلی'
+pageRef = '/'
+weight = 10
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[[module.mounts]]
+source = 'attachments'
+target = 'assets/attachments'
+
+[[module.mounts]]
+source = 'assets/css/custom.css'
+target = 'assets/css/custom.css'
